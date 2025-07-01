@@ -1,12 +1,11 @@
-# Your ETL logic (modular)
 from googleapiclient.discovery import build
 from dotenv import load_dotenv
 import pandas as pd
 import os
 
-# Load API key from .env (for local testing)
+# Load API key from .env or GitHub secret
 load_dotenv()
-API_KEY = os.getenv("AIzaSyDo31t6cuEOmYGll5uOlokYCyuXHRa4ujY")
+API_KEY = os.getenv("YOUTUBE_API_KEY")
 
 # YouTube API client
 youtube = build("youtube", "v3", developerKey=API_KEY)
