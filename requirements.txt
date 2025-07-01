@@ -1,0 +1,7 @@
+**** Python dependencies ****
+
+google-api-python-client
+pandas
+python-dotenv
+
+
