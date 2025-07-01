@@ -3,9 +3,9 @@ from dotenv import load_dotenv
 import pandas as pd
 import os
 
-# Load API key from .env or GitHub secret
+# Load API key from .env (for local testing)
 load_dotenv()
-API_KEY = os.getenv("YOUTUBE_API_KEY")
+API_KEY = os.getenv("YOUTUBE_API_KEY")  # <- use the name of the env variable here
 
 # YouTube API client
 youtube = build("youtube", "v3", developerKey=API_KEY)
